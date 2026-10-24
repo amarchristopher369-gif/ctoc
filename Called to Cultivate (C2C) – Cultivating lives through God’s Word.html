@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Called to Cultivate (C2C) – Cultivating lives through God’s Word</title>
+<meta name="description" content="Called to Cultivate is a Christian ministry sharing Bible teaching, daily devotions and discipleship in English and Hindi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#173D32;--gd:#102D25;--cream:#F6F1E7;--gold:#C4A46B;--ink:#252C28;--w:#fff;--mg:#E9EDE5;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans","Noto Sans Devanagari",system-ui,sans-serif;
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--sans)}
+html[lang=hi] body{line-height:1.8}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0 0 .5em;color:var(--g)}
+html[lang=hi] h1,html[lang=hi] h2,html[lang=hi] h3{font-family:var(--sans);line-height:1.3}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--gold);cursor:pointer;font:600 16px var(--sans);transition:background .25s,color .25s}
+.btn.p{background:var(--gold);color:var(--gd)}.btn.p:hover{background:var(--cream)}
+.btn.s{background:transparent;color:var(--cream)}.btn.s:hover{background:rgba(196,164,107,.2)}
+.btn.d{background:var(--g);color:var(--cream);border-color:var(--g)}.btn.d:hover{background:var(--gd)}
+.btn.o{background:transparent;color:var(--g);border-color:var(--g)}.btn.o:hover{background:var(--mg)}
+/* header */
+header{position:sticky;top:0;z-index:20;background:transparent;transition:background .3s,box-shadow .3s;padding-top:env(safe-area-inset-top,0px)}
+header.on{background:rgba(16,45,37,.96);box-shadow:0 2px 14px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--cream);text-decoration:none;letter-spacing:.02em}
+.logo b{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav a{color:var(--cream);text-decoration:none;font-size:15px;font-weight:500}
+nav a:hover{color:var(--gold)}
+.tools{display:flex;gap:10px;align-items:center}
+.lang{display:flex;border:1px solid var(--gold);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--cream);padding:6px 12px;font:600 13px var(--sans);cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--gold);color:var(--gd)}
+.burger{display:none;background:none;border:1px solid var(--gold);color:var(--cream);border-radius:8px;width:42px;height:42px;font-size:20px;cursor:pointer}
+@media(max-width:900px){
+.burger{display:block}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--gd);max-height:0;overflow:hidden;transition:max-height .35s}
+nav.open{max-height:440px}
+nav ul{flex-direction:column;gap:0;padding:8px 24px 18px}
+nav li a{display:block;padding:12px 0;border-bottom:1px solid rgba(246,241,231,.12)}}
+/* hero */
+.hero{margin-top:-68px;padding:150px 0 110px;background:radial-gradient(1200px 500px at 85% 110%,rgba(196,164,107,.22),transparent 60%),linear-gradient(170deg,var(--g),var(--gd));color:var(--cream);position:relative;overflow:hidden}
+.hero h1{color:var(--cream);font-size:clamp(46px,9vw,112px);max-width:12ch;letter-spacing:-.01em}
+html[lang=hi] .hero h1{font-size:clamp(34px,6vw,70px);max-width:16ch}
+.hero p{font-size:20px;max-width:34em;color:#e4e0d2}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.sprout{position:absolute;right:max(24px,6vw);bottom:0;width:min(300px,34vw);height:auto;opacity:.9}
+.sprout path{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:grow 3.2s .3s ease-out forwards}
+.sprout .l{fill:var(--gold);opacity:0;animation:leaf 1s 2.6s forwards}
+@keyframes grow{to{stroke-dashoffset:0}}@keyframes leaf{to{opacity:.85}}
+@media(max-width:700px){.sprout{opacity:.35;width:52vw}}
+section{padding:92px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media(max-width:800px){.two{grid-template-columns:1fr;gap:28px}section{padding:64px 0}}
+h2{font-size:clamp(34px,5vw,56px)}
+.lead{font-size:19px}
+/* scripture */
+.scr{background:var(--g);color:var(--cream);padding:48px;border-radius:20px;box-shadow:0 18px 40px -18px rgba(16,45,37,.6);border-top:5px solid var(--gold)}
+.scr q{display:block;font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);line-height:1.3;quotes:"“" "”";margin:10px 0 14px}
+.scr small{color:var(--gold);font-size:15px}
+.scr .r{margin-top:22px;color:#d9d6c8;font-size:15px}
+.scr .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.scr .row .btn{padding:10px 20px;font-size:14px}
+.note{font-size:14px;color:#6a726c}
+.scr .note{color:#b9bfb5}
+/* empty states */
+.mg{background:var(--mg)}
+.empty{border:2px dashed var(--gold);border-radius:16px;padding:40px;background:rgba(255,255,255,.55);max-width:760px}
+.empty h3{font-size:26px}
+/* pillars */
+.pil{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--g)}
+.pil div{padding:28px 24px 8px 0}
+.pil div+div{padding-left:24px;border-left:1px solid rgba(23,61,50,.25)}
+.pil h3{font-size:28px}
+@media(max-width:900px){.pil{grid-template-columns:1fr 1fr}.pil div:nth-child(3){border-left:0;padding-left:0}.pil div{border-top:1px solid rgba(23,61,50,.25)}}
+@media(max-width:520px){.pil{grid-template-columns:1fr}.pil div,.pil div+div{border-left:0;padding-left:0}}
+.mission{background:var(--gd);color:var(--cream)}
+.mission h2{color:var(--cream)}
+.mission .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:6px;padding:2px 10px;font-size:13px;margin-bottom:16px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.links a{display:block;background:var(--w);padding:22px;border-radius:14px;text-decoration:none;border-left:5px solid var(--gold);font-weight:600;color:var(--g)}
+.links a:hover{background:var(--mg)}
+.links span{display:block;font-weight:400;font-size:15px;color:var(--ink);margin-top:4px}
+footer{background:var(--gd);color:#d9d6c8;padding:56px 0 30px;font-size:15px}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+@media(max-width:700px){footer .g{grid-template-columns:1fr}}
+footer h3{color:var(--cream);font-size:22px}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin:6px 0}footer a{text-decoration:none}footer a:hover{color:var(--gold)}
+footer .c{border-top:1px solid rgba(246,241,231,.15);margin-top:34px;padding-top:18px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sprout path{animation:none;stroke-dashoffset:0}.sprout .l{animation:none;opacity:.85}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#top" aria-label="Called to Cultivate home">C<b>2</b>C</a>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#top" data-t="n1">Home</a></li><li><a href="#about" data-t="n2">About</a></li><li><a href="#devotions" data-t="n3">Daily Devotions</a></li><li><a href="#media" data-t="n4">Media</a></li><li><a href="#resources" data-t="n5">Bible Resources</a></li><li><a href="#connect" data-t="n6">Get Involved</a></li><li><a href="#contact" data-t="n7">Contact</a></li></ul></nav>
+<div class="tools"><div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="hi" aria-pressed="false" lang="hi">हिं</button></div>
+<button class="burger" id="bg" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button></div>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1 data-t="h1">Rooted in Christ. Growing in His Word.</h1>
+<p data-t="hp">Planting truth. Nurturing faith. Cultivating lives through God’s Word.</p>
+<div class="cta"><a class="btn p" href="#devotions" data-t="c1">Explore Devotions</a><a class="btn s" href="#media" data-t="c2">Watch Messages</a></div></div>
+<svg class="sprout" viewBox="0 0 200 260" aria-hidden="true"><path d="M100 255 C100 200 96 150 100 100 C103 70 100 50 100 30"/><path d="M99 170 C70 160 50 140 44 110 C75 112 95 130 99 170"/><path d="M101 120 C130 112 150 92 156 62 C125 66 105 86 101 120"/><ellipse class="l" cx="100" cy="22" rx="9" ry="14"/></svg></div>
+
+<section id="about"><div class="wrap two"><div>
+<h2 data-t="a1">The Word That Grows</h2>
+<p class="lead" data-t="a2">Jesus taught that the seed is the Word of God. Like a seed, Scripture does its quiet work beneath the surface, takes root, and in time bears fruit. To cultivate is to tend that growth with patience, prayer and the daily habit of listening to God.</p>
+<a class="btn d" href="#mission" data-t="a3">Learn About Us</a></div>
+<div class="scr" id="sc" role="region" aria-label="Today’s Scripture">
+<small data-t="s0">Today’s Scripture</small>
+<q id="sv">Now the parable is this: The seed is the word of God.</q>
+<strong id="sr">Luke 8:11</strong>
+<div class="r"><span id="st">Translation: King James Version (public domain)</span></div>
+<p class="note" id="sn" data-t="s1">Reflection: Every day is a chance to sow. What is one verse you can plant in your heart today?</p>
+<div class="row"><button class="btn p" id="cp" data-t="s2">Copy verse</button><button class="btn s" id="sh" data-t="s3">Share verse</button><a class="btn s" href="#devotions" data-t="s4">Read full devotion</a></div>
+<p class="note" id="hn" hidden data-t="s5">The Hindi verse will appear here once a reviewed, properly attributed Hindi translation is added.</p>
+</div></div></section>
+
+<section class="mg" id="devotions"><div class="wrap">
+<h2 data-t="d1">Latest Devotions</h2>
+<div class="empty"><h3 data-t="d2">The first devotions are being prepared</h3><p data-t="d3">Published devotions will appear here with their Scripture, summary and reading time. Nothing is published yet.</p></div></div></section>
+
+<section id="media"><div class="wrap">
+<h2 data-t="m1">Latest Videos</h2>
+<div class="empty"><h3 data-t="m2">No videos connected yet</h3><p data-t="m3">Once the ministry’s YouTube channel is linked, recent Bible teaching will show here. Videos load only after you press play, to protect your privacy.</p></div></div></section>
+
+<section class="mission" id="mission"><div class="wrap two"><div>
+<span class="tag" data-t="v0">Proposed – awaiting founder approval</span>
+<h2 data-t="v1">Our Mission</h2>
+<p class="lead" data-t="v2">To communicate biblical truth, encourage spiritual growth, equip believers and reach people through Scripture-based teaching, digital media, discipleship and evangelism.</p></div>
+<div><h3 style="color:var(--gold)" data-t="v3">Our Vision</h3>
+<p class="lead" data-t="v4">To see lives transformed by God’s Word, believers rooted in Christ, and a generation equipped to fulfil God’s purpose.</p></div></div></section>
+
+<section id="pillars"><div class="wrap"><h2 data-t="p0">Four ways we cultivate</h2>
+<div class="pil">
+<div><h3 data-t="p1">Cultivate Faith</h3><p data-t="p1d">Trust in Christ that grows through prayer and the Word.</p></div>
+<div><h3 data-t="p2">Cultivate Truth</h3><p data-t="p2d">Teaching rooted in Scripture, explained simply and honestly.</p></div>
+<div><h3 data-t="p3">Cultivate Growth</h3><p data-t="p3d">Steady discipleship for new and mature believers alike.</p></div>
+<div><h3 data-t="p4">Cultivate Purpose</h3><p data-t="p4d">Equipping people to serve God where He has placed them.</p></div></div></div></section>
+
+<section class="mg" id="connect"><div class="wrap"><h2 data-t="g1">Get Connected</h2>
+<p class="lead" data-t="g2" style="max-width:36em">Follow along, ask for prayer, explore Bible resources and hear about new messages.</p>
+<div class="links" id="resources">
+<a href="#contact"><span style="display:inline;color:inherit;font-weight:600" data-t="g3">Submit a prayer request</span><span data-t="g3d">Form coming soon; it will not be public.</span></a>
+<a href="#resources"><span style="display:inline;color:inherit;font-weight:600" data-t="g4">Bible resources</span><span data-t="g4d">Study guides and reading plans, coming soon.</span></a>
+<a href="#contact"><span style="display:inline;color:inherit;font-weight:600" data-t="g5">Ministry updates</span><span data-t="g5d">Sign-up opens when email delivery is set up.</span></a></div></div></section>
+</main>
+<footer id="contact"><div class="wrap"><div class="g">
+<div><h3>Called to Cultivate</h3><p data-t="f1">Cultivating lives through God’s Word.</p><p><a href="mailto:amarchristopher369@gmail.com">amarchristopher369@gmail.com</a></p><p class="note" style="color:#b9bfb5" data-t="f2">Social media links will be added once confirmed by the ministry.</p></div>
+<div><h3 data-t="f3">Explore</h3><ul><li><a href="#about" data-t="n2">About</a></li><li><a href="#devotions" data-t="n3">Daily Devotions</a></li><li><a href="#media" data-t="n4">Media</a></li><li><a href="#connect" data-t="n6">Get Involved</a></li></ul></div>
+<div><h3 data-t="f4">Legal</h3><ul><li>Privacy Policy (pending)</li><li>Terms (pending)</li></ul></div></div>
+<div class="c">© 2026 Called to Cultivate (C2C)</div></div></footer>
+<script>
+const T={hi:{n1:"होम",n2:"परिचय",n3:"दैनिक मनन",n4:"मीडिया",n5:"बाइबल संसाधन",n6:"जुड़ें",n7:"संपर्क",
+h1:"मसीह में जड़ें। उसके वचन में बढ़ते हुए।",hp:"सत्य बोना। विश्वास को सींचना। परमेश्वर के वचन से जीवन संवारना।",c1:"मनन पढ़ें",c2:"संदेश देखें",
+a1:"वचन जो बढ़ता है",a2:"यीशु ने सिखाया कि बीज परमेश्वर का वचन है। बीज की तरह वचन भी भीतर चुपचाप काम करता है, जड़ पकड़ता है और समय पर फल लाता है।",a3:"हमारे बारे में",
+s0:"आज का वचन",s1:"मनन: हर दिन बोने का अवसर है। आज आप कौन-सा वचन अपने हृदय में बोएँगे?",s2:"वचन कॉपी करें",s3:"वचन साझा करें",s4:"पूरा मनन पढ़ें",s5:"समीक्षित और सही स्रोत वाला हिंदी अनुवाद जुड़ने पर हिंदी वचन यहाँ दिखेगा।",
+d1:"नवीनतम मनन",d2:"पहले मनन तैयार किए जा रहे हैं",d3:"प्रकाशित मनन यहाँ दिखेंगे। अभी कुछ प्रकाशित नहीं है।",
+m1:"नवीनतम वीडियो",m2:"अभी कोई वीडियो जुड़ा नहीं है",m3:"YouTube चैनल जुड़ने पर बाइबल शिक्षा यहाँ दिखेगी।",
+v0:"प्रस्तावित – संस्थापक की स्वीकृति शेष",v1:"हमारा उद्देश्य",v2:"बाइबल सत्य को पहुँचाना, आत्मिक उन्नति को प्रोत्साहित करना, विश्वासियों को सुसज्जित करना और लोगों तक पहुँचना।",v3:"हमारा दर्शन",v4:"परमेश्वर के वचन से बदले हुए जीवन और मसीह में जड़ पकड़े विश्वासी।",
+p0:"जीवन संवारने के चार तरीके",p1:"विश्वास बढ़ाएँ",p1d:"प्रार्थना और वचन से बढ़ता मसीह पर भरोसा।",p2:"सत्य बढ़ाएँ",p2d:"वचन पर आधारित, सरल और ईमानदार शिक्षा।",p3:"उन्नति करें",p3d:"नए और परिपक्व विश्वासियों के लिए निरंतर शिष्यता।",p4:"उद्देश्य पाएँ",p4d:"जहाँ परमेश्वर ने रखा है, वहाँ सेवा के लिए तैयार करना।",
+g1:"जुड़े रहें",g2:"हमें फॉलो करें, प्रार्थना माँगें और बाइबल संसाधन देखें।",g3:"प्रार्थना निवेदन",g3d:"फ़ॉर्म जल्द आएगा; यह सार्वजनिक नहीं होगा।",g4:"बाइबल संसाधन",g4d:"अध्ययन सामग्री जल्द आएगी।",g5:"सेवकाई अपडेट",g5d:"ईमेल सेवा तैयार होने पर साइन-अप खुलेगा।",
+f1:"परमेश्वर के वचन से जीवन संवारना।",f2:"पुष्टि होने पर सोशल मीडिया लिंक जोड़े जाएँगे।",f3:"खोजें",f4:"कानूनी"}};
+const D={};document.querySelectorAll("[data-t]").forEach(e=>D[e.dataset.t+"|"+(e.tagName)+Math.random()]=0);
+const els=[...document.querySelectorAll("[data-t]")];els.forEach(e=>e._en=e.textContent);
+function setLang(l){document.documentElement.lang=l;
+els.forEach(e=>{const k=e.dataset.t;e.textContent=(l==="hi"&&T.hi[k])?T.hi[k]:e._en});
+document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+document.getElementById("hn").hidden=l!=="hi"}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+const hd=document.getElementById("hd");addEventListener("scroll",()=>hd.classList.toggle("on",scrollY>30),{passive:true});
+const nav=document.getElementById("nav"),bg=document.getElementById("bg");
+bg.onclick=()=>{const o=nav.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+nav.querySelectorAll("a").forEach(a=>a.onclick=()=>{nav.classList.remove("open");bg.setAttribute("aria-expanded","false")});
+const txt=()=>document.getElementById("sv").textContent+" – "+document.getElementById("sr").textContent+" (KJV)";
+document.getElementById("cp").onclick=async function(){const o=this.textContent;try{await navigator.clipboard.writeText(txt());this.textContent="Copied"}catch(e){this.textContent="Copy failed"}setTimeout(()=>this.textContent=o,1600)};
+document.getElementById("sh").onclick=async()=>{try{navigator.share?await navigator.share({title:"Called to Cultivate",text:txt(),url:location.href}):await navigator.clipboard.writeText(txt())}catch(e){}};
+</script>
+</body>
+</html>
